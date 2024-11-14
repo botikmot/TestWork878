@@ -165,7 +165,7 @@ function enqueue_cities_table_script() {
 add_action('wp_enqueue_scripts', 'enqueue_cities_table_script');
 
 
-
+// filter cities functionality
 function filter_cities() {
     global $wpdb;
     // Sanitize and process the query
