@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
             console.log("Search Query: " + searchQuery);
             console.log("AJAX URL: " + citiesTableParams.ajax_url);
             console.log("Nonce: " + citiesTableParams.nonce);
-
+            $('#cities-table-body').html('Searching data..');
             // AJAX request to get filtered cities
             $.ajax({
                 url: citiesTableParams.ajax_url, // Use localized AJAX URL
