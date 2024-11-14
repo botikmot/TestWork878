@@ -6,6 +6,13 @@ function storefront_child_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'storefront_child_enqueue_styles');
 
+// add jquery for fetching data
+function enqueue_jquery() {
+    wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'enqueue_jquery');
+
+
 // Create a custom post type called “Cities.”
 function create_city_post_type() {
     register_post_type('city', [
@@ -146,12 +153,6 @@ function register_city_temperature_widget() {
 add_action('widgets_init', 'register_city_temperature_widget');
 
 
-// add jquery for fetching data
-function enqueue_jquery() {
-    wp_enqueue_script('jquery');
-}
-add_action('wp_enqueue_scripts', 'enqueue_jquery');
-
 // include cities-table.js
 function enqueue_cities_table_script() {
     wp_enqueue_script('cities-table', get_stylesheet_directory_uri() . '/js/cities-table.js', array('jquery'), null, true);
@@ -164,8 +165,6 @@ function enqueue_cities_table_script() {
 add_action('wp_enqueue_scripts', 'enqueue_cities_table_script');
 
 
-add_action('wp_ajax_filter_cities', 'filter_cities');
-add_action('wp_ajax_nopriv_filter_cities', 'filter_cities');
 
 function filter_cities() {
     global $wpdb;
@@ -239,6 +238,10 @@ function filter_cities() {
         wp_send_json_error('No weather data found for the city');
     }
 }
+
+add_action('wp_ajax_filter_cities', 'filter_cities');
+add_action('wp_ajax_nopriv_filter_cities', 'filter_cities');
+
 
 // get the temperature from API
 function fetch_city_temperature() {
