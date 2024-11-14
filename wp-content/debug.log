@@ -1,0 +1,101 @@
+[13-Nov-2024 15:17:58 UTC] Search Query: test
+[13-Nov-2024 15:22:03 UTC] Search Query: sample
+[13-Nov-2024 15:23:37 UTC] Search Query: butuan
+[13-Nov-2024 15:23:38 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\TestWork878\wp-includes\formatting.php on line 1096
+[13-Nov-2024 15:25:16 UTC] Search Query: butuan
+[13-Nov-2024 15:25:16 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in C:\xampp\htdocs\TestWork878\wp-includes\formatting.php:1096
+Stack trace:
+#0 C:\xampp\htdocs\TestWork878\wp-includes\formatting.php(4655): wp_check_invalid_utf8(Object(stdClass))
+#1 C:\xampp\htdocs\TestWork878\wp-content\themes\storefront-child\functions.php(148): esc_html(Object(stdClass))
+#2 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(324): filter_cities('')
+#3 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\TestWork878\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\TestWork878\wp-admin\admin-ajax.php(192): do_action('wp_ajax_filter_...')
+#6 {main}
+  thrown in C:\xampp\htdocs\TestWork878\wp-includes\formatting.php on line 1096
+[13-Nov-2024 15:26:12 UTC] Search Query: butuan
+[13-Nov-2024 15:26:13 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in C:\xampp\htdocs\TestWork878\wp-content\themes\storefront-child\functions.php:145
+Stack trace:
+#0 C:\xampp\htdocs\TestWork878\wp-content\themes\storefront-child\functions.php(145): json_decode(Array)
+#1 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(324): filter_cities('')
+#2 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\TestWork878\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\TestWork878\wp-admin\admin-ajax.php(192): do_action('wp_ajax_filter_...')
+#5 {main}
+  thrown in C:\xampp\htdocs\TestWork878\wp-content\themes\storefront-child\functions.php on line 145
+[13-Nov-2024 15:26:45 UTC] Search Query: butuan
+[13-Nov-2024 15:28:51 UTC] Search Query: butuan
+[13-Nov-2024 15:29:49 UTC] Search Query: butuan
+[13-Nov-2024 15:29:57 UTC] Search Query: manila
+[13-Nov-2024 15:30:05 UTC] Search Query: davao
+[13-Nov-2024 15:30:17 UTC] Search Query: queensland
+[13-Nov-2024 15:30:26 UTC] Search Query: vatican
+[13-Nov-2024 15:30:38 UTC] Search Query: surigao
+[13-Nov-2024 15:31:58 UTC] Search Query: cebu
+[13-Nov-2024 22:08:19 UTC] Search Query: Butuan City
+[13-Nov-2024 23:39:24 UTC] Search Query: cebu
+[13-Nov-2024 23:39:36 UTC] Search Query: Butuan City
+[13-Nov-2024 23:39:42 UTC] Search Query: 
+[14-Nov-2024 00:06:02 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "enqueue_city_temperature_script" not found or invalid function name in C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\TestWork878\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\TestWork878\wp-includes\script-loader.php(2272): do_action('wp_enqueue_scri...')
+#3 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\TestWork878\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\TestWork878\wp-includes\general-template.php(3064): do_action('wp_head')
+#7 C:\xampp\htdocs\TestWork878\wp-content\themes\storefront\header.php(18): wp_head()
+#8 C:\xampp\htdocs\TestWork878\wp-includes\template.php(810): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\TestWork878\wp-includes\template.php(745): load_template('C:\\xampp\\htdocs...', true, Array)
+#10 C:\xampp\htdocs\TestWork878\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\xampp\htdocs\TestWork878\wp-content\themes\storefront-child\page-cities.php(3): get_header()
+#12 C:\xampp\htdocs\TestWork878\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\TestWork878\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\TestWork878\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php on line 324
+[14-Nov-2024 00:06:08 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "enqueue_city_temperature_script" not found or invalid function name in C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\TestWork878\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\TestWork878\wp-includes\script-loader.php(2272): do_action('wp_enqueue_scri...')
+#3 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\TestWork878\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\TestWork878\wp-includes\general-template.php(3064): do_action('wp_head')
+#7 C:\xampp\htdocs\TestWork878\wp-content\themes\storefront\header.php(18): wp_head()
+#8 C:\xampp\htdocs\TestWork878\wp-includes\template.php(810): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\TestWork878\wp-includes\template.php(745): load_template('C:\\xampp\\htdocs...', true, Array)
+#10 C:\xampp\htdocs\TestWork878\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\xampp\htdocs\TestWork878\wp-content\themes\storefront-child\page-cities.php(3): get_header()
+#12 C:\xampp\htdocs\TestWork878\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\TestWork878\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\TestWork878\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\TestWork878\wp-includes\class-wp-hook.php on line 324
+[14-Nov-2024 00:10:01 UTC] Search Query: test
+[14-Nov-2024 00:10:06 UTC] Search Query: 
+[14-Nov-2024 00:18:45 UTC] Search Query: manila
+[14-Nov-2024 00:18:54 UTC] Search Query: 
+[14-Nov-2024 00:21:35 UTC] Search Query: Butuan
+[14-Nov-2024 00:21:43 UTC] Search Query: test
+[14-Nov-2024 00:21:48 UTC] Search Query: 
+[14-Nov-2024 00:22:28 UTC] Search Query: tokyo
+[14-Nov-2024 00:22:35 UTC] Search Query: 
+[14-Nov-2024 00:29:06 UTC] Search Query: manila
+[14-Nov-2024 00:29:09 UTC] Search Query: 
+[14-Nov-2024 00:29:16 UTC] Search Query: butuan
+[14-Nov-2024 00:29:20 UTC] Search Query: 
+[14-Nov-2024 00:29:32 UTC] Search Query: butuan city
+[14-Nov-2024 00:29:39 UTC] Search Query: 
+[14-Nov-2024 00:29:40 UTC] Search Query: 
+[14-Nov-2024 00:29:45 UTC] Search Query: tokyo
+[14-Nov-2024 00:29:49 UTC] Search Query: 
+[14-Nov-2024 00:30:31 UTC] Search Query: cebu
+[14-Nov-2024 00:30:38 UTC] Search Query: 
+[14-Nov-2024 00:34:19 UTC] Search Query: manila
+[14-Nov-2024 00:34:32 UTC] Search Query: butuan
+[14-Nov-2024 00:34:39 UTC] Search Query: butuan city
+[14-Nov-2024 00:34:52 UTC] Search Query: cebu
+[14-Nov-2024 00:34:54 UTC] Search Query: 
